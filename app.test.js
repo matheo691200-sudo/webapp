@@ -1,5 +1,13 @@
-const calcul = require('./app');
+const calc = require('./app');
 
-test('adds 1 + 2 to equal 3', () => {
-  expect(calcul(1, 2)).toBe(3);
+test('additionne 2 + 3 = 5', () => {
+  expect(calc.additionne(2, 3)).toBe(5);
+});
+
+test('soustrait 5 - 2 = 3', () => {
+  expect(calc.soustrait(5, 2)).toBe(3);
+});
+
+test('multiplie 4 * 3 = 12', () => {
+  expect(calc.multiplie(4, 3)).toBe(12);
 });
