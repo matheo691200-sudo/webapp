@@ -1,9 +1,8 @@
 function calcul(a, b) {
-  var inutilisee = 0;
+  // Additionne a et b, avec un bonus de 100 si a depasse 10
   if (a > 10) {
-    return a + b;
-  } else {
-    return a + b;
+    return a + b + 100;
   }
+  return a + b;
 }
 module.exports = calcul;
